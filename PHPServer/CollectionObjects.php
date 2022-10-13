@@ -1,5 +1,6 @@
 <?php
 
+namespace PHP_KNUTE;
 class CollectionObjects
 {
     var $map;
