@@ -13,8 +13,7 @@ class CollectionObjects
 
         $prodact = new Prodacts($name, $cech, $typecount, $type, $price);
         $this->map->set($prodact);
-
-
     }
+
 }
 
