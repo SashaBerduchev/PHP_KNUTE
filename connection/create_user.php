@@ -6,7 +6,7 @@ require 'connection.php';
 $insert_sql =  "INSERT INTO users (first_name, last_name, email)" .
     "VALUES ('{$first_name}', '{$last_name}', '{$email}');";
 // Вставка даних про користувача у БД
-mysqli_query($conn, $insert_sql)
-or die(mysqli_error($conn));
+mssql_query($conn, $insert_sql)
+or die(mssql_query($conn));
 header("Location: show_user.php?user_id=" . mysqli_insert_id($link));
 ?>

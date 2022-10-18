@@ -5,9 +5,9 @@ $user_id =  $_REQUEST['user_id'];
 // Создание инструкции SELECT
 $select_query = "SELECT * FROM users WHERE user_id = " . $user_id;
 // Запуск запроса
-$result = mysqli_query($conn, $select_query);
+$result = mssql_query($conn, $select_query);
 if ($result) {
-    $row = mysqli_fetch_array($result);
+    $row = mssql_fetch_array($result);
     $first_name = $row['first_name'];
     $last_name = $row['last_name'];
     $email = $row['email'];

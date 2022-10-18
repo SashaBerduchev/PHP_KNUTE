@@ -11,7 +11,7 @@ if (!$conn) {
     echo " Успішно з'єдналися! ";
 };
 $query ="SELECT * FROM users";
-$result = mysqli_query($conn, $query) or die("Ошибка " . mysqli_error($conn));
+$result = mssql_query($conn, $query) or die("Ошибка " . mysqli_error($conn));
 if ($result)
 {
     echo $result;
